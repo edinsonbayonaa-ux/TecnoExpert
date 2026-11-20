@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecnoExpert</title>
+
+  <!-- Aquí se conecta el archivo de estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="logo">🖥️</div>
+    <h1>Tecno<span>Expert</span></h1>
+    <p>Tu sistema experto para diagnosticar problemas del computador</p>
+  </header>
+
+  <!-- TARJETA PRINCIPAL -->
+  <div class="tarjeta">
+
+    <!-- Pregunta 1 -->
+    <div class="paso"><span class="num">1</span> ¿Qué problema presenta tu computador?</div>
+    <select id="problema">
+      <option value="">-- Selecciona --</option>
+      <option value="Lentitud">🐌 Lentitud</option>
+      <option value="Sobrecalentamiento">🔥 Sobrecalentamiento</option>
+      <option value="No enciende">🔌 No enciende</option>
+      <option value="Reinicios">🔄 Se reinicia solo</option>
+    </select>
+
+    <!-- Pregunta 2 -->
+    <div class="paso"><span class="num">2</span> ¿Cuándo ocurre el problema?</div>
+    <select id="momento">
+      <option value="">-- Selecciona --</option>
+      <option value="Al iniciar">🚀 Al iniciar</option>
+      <option value="Mientras se utiliza">⌨️ Mientras se utiliza</option>
+      <option value="Al ejecutar juegos">🎮 Al ejecutar juegos</option>
+      <option value="Al ejecutar programas">📂 Al ejecutar programas</option>
+    </select>
+
+    <!-- Botones -->
+    <div class="botones">
+      <button class="btn-diag" onclick="diagnosticar()">🔍 Diagnosticar</button>
+      <button class="btn-limpiar" onclick="limpiar()">Limpiar</button>
+    </div>
+
+    <!-- Aquí aparece la respuesta -->
+    <div id="resultado"></div>
+  </div>
+
+  <footer>TecnoExpert · Sistema experto basado en reglas</footer>
+
+  <!-- Aquí se conecta el archivo de JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
